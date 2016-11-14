@@ -1,0 +1,16 @@
+*.pyc
+*.png
+
+*.dat
+*.gz
+*.npy
+
+*.swp
+
+*.mat
+*.txt
+
+*.DS_Store
+
+rae/*/data*
+rae/*/output*
