@@ -89,7 +89,11 @@ class NN(object):
             #print out
             #计算差距 自编码算法，不存在y， 直接和 x 比较
             diff = out - X
-            cost = 0.5 * np.sum(np.multiply(diff, diff)) / 1000
+
+
+            #cost = diff + ref  + punish  = 1/2error**2 +
+            cost = 0.5 * np.sum(np.multiply(diff, diff)) / self.count_datas
+
 
             print cost
 
