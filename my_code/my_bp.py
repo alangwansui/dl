@@ -26,6 +26,9 @@ def show(datas, labels, w1,b1,w2,b2, N=100, max=3,min=-3,):
 
 #################################################################
 datas, labels = generate_data(200,0.15)
+
+print labels
+
 nn = NN(datas, labels, 3, patience_n=6, patience_v=0.001)
 nn.train(800)
 print 'right rate: %s' % nn.validation()

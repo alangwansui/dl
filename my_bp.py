@@ -7,7 +7,7 @@ class Config:
     nn_input_dim = 2  # input layer dimensionality
     nn_output_dim = 2  # output layer dimensionality
     # Gradient descent parameters (I picked these by hand)
-    epsilon = 0.01  # learning rate for gradient descent
+    epsilon = 0.5  # learning rate for gradient descent
     reg_lambda = 0.01  # regularization strength
 
 
